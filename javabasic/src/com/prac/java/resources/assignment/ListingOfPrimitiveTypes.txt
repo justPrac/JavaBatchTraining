@@ -1,0 +1,10 @@
+#List of some important primitive types in Java
+
+1. int
+2. double
+3. float
+4. short
+5. long
+6. char
+7. byte
+8. boolean
