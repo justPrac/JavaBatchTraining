@@ -1,6 +1,5 @@
 package com.prac.core.java;
 
-import com.prac.core.java.geo.Rectangle;
 import com.prac.core.java.geo.Shape;
 import com.prac.core.java.geo.Square;
 
