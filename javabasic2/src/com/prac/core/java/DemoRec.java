@@ -2,36 +2,28 @@ package com.prac.core.java;
 
 import com.prac.core.java.geo.Rectangle;
 
-public class DemoRec {
+public class DemoRec 
+{
 		
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	public static void main(String[] args) 
+	{
+		Rectangle r1 = new Rectangle(12, 54);
+		Rectangle r2 = new Rectangle(20, 49);
+		Rectangle r3 = new Rectangle(20, 49);
+		Rectangle r4 = r1;
 		
-		int temp = Rectangle.myStatic;
-		System.out.println("mystatic " + temp);
+		//OVERRIDEN EQUALS() TEST
+		System.out.println("r2==r3 => " + (r2==r3));
+		System.out.println("r1==r4 => " + (r1==r4));
+		System.out.println("r1.equals(r2) => " + (r1.equals(r2)));
+		System.out.println("r2.equals(r3) => " + (r2.equals(r3)));
+		System.out.println("r1.equals(r4) => " + (r1.equals(r4)));
 		
-		Rectangle r1 = new Rectangle();
-		Rectangle r2 = new Rectangle();
-		
-		r1.myStatic = 100;
-		
-		
-		System.out.println(Rectangle.myStatic);
-		Rectangle.change();
-		
-		
-		
-		System.out.println("======Overloading example==========");
-		Rectangle tempR = new Rectangle(100, 200);
-		tempR.calArea();
-		
-		
-		Rectangle tempR1 = new Rectangle("Rectangle overload");
-		tempR1.calArea();
-		
-		Rectangle tempR2 = new Rectangle(2);
-		tempR2.calArea();
-		
+		//OVERRIDEN TOSTRING()
+		System.out.println(r1);
+		System.out.println(r2);
+		System.out.println(r3);
+		System.out.println(r4);
 	}
 
 }

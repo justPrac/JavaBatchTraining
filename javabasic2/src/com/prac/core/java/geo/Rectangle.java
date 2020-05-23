@@ -10,7 +10,7 @@ public class Rectangle extends Shape{
 	
 	int check;
 	
-	
+/*	
     //instance level
 	{
 	 System.out.println("instance level block");
@@ -25,8 +25,10 @@ public class Rectangle extends Shape{
 		myStatic = 1;
 	}
 	
+*/
+	
 	public Rectangle(){
-		System.out.println("Default constructor");
+		//System.out.println("Default constructor");
 		length = 10;
 		bredth = 2;
 	}
@@ -34,7 +36,7 @@ public class Rectangle extends Shape{
 	public Rectangle(int len, int bred){
 		this.length = len;
 		this.bredth = bred;
-		System.out.println("Constructor called parametric");
+		//System.out.println("Constructor called parametric");
 	}
 	
 	public Rectangle(String message){
@@ -78,7 +80,6 @@ public class Rectangle extends Shape{
 		System.out.println("Protected myProtected called");
 	}
 
-	
 	void display(){
 		System.out.println("Display");
 	}
@@ -86,5 +87,26 @@ public class Rectangle extends Shape{
 	@Override
 	public void calShapeArea() {
 		calArea();
+	}
+	
+	@Override
+	public boolean equals(Object o)
+	{
+		if(o instanceof Rectangle)
+		{
+			if(o == this) 
+				return true;
+			
+			Rectangle r = (Rectangle)o;
+			if(r.getBredth() == this.getBredth() && r.getLength() == this.getLength())
+				return true;
+		}
+		return false;
+	}
+	
+	@Override
+	public String toString()
+	{
+		return ("Rec: [L=" + this.getLength() + ", B=" + this.getBredth() + "]");
 	}
 }
