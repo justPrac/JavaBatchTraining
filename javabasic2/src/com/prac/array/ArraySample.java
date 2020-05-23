@@ -11,28 +11,40 @@ public class ArraySample {
 	  * a->2
 	  * ....
 	  */
-		
-	  int cnt[] = new int[26];	
-	  System.out.println("Enter the string ");
-	  Scanner sc = new Scanner(System.in);
-	  String str = sc.nextLine();
 	  
+	  Scanner sc = new Scanner(System.in);
+	  int cnt[] = new int[52];	
+	  System.out.println("Enter the string ");
+	  String str = sc.nextLine();
 	  char ch[] = str.toCharArray();
 	  
-	  for (int i = 0; i < ch.length; i++) {
-		 
-		  int position = ch[i]-65;
-		  cnt[position] = ++cnt[position];
-		//System.out.println("charater is " + position);
-	}
-	  
-	  for (int i = 0; i < cnt.length; i++) {
+	  for(int i = 0; i < ch.length; i++) 
+	  {
+		  int position = 0;
+		  if(ch[i] >= 65 && ch[i] <= 91)
+			  position = ch[i]-65;
+		  else if(ch[i] >= 98 && ch[i] <= 124)
+			  position = ch[i]-98+26;
+		  else
+			  continue;
 		  
-		  if(cnt[i]>0){
-			  char temp = (char) (i + 65);
-		    System.out.println( temp + " = " + cnt[i]);	 
+		  cnt[position] = ++cnt[position];
+	  }
+	  
+	  for(int i = 0; i < cnt.length; i++) 
+	  {
+		  char temp = ' ';
+		  if(cnt[i]>0)
+		  {
+			  if(i <= 26)
+				  temp = (char) (i + 65);
+			  else
+				  temp = (char) (i + 98-26);
+			  
+		     System.out.println( temp + " = " + cnt[i]);	 
 		  } 
 	  }
+	  sc.close();
 	}
 
 }
