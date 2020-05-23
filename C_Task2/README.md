@@ -18,7 +18,7 @@
 ● NOTE: At a time user can perform one action at a time.<br>
 
 3. Write a program in JAVA to implement the given flowchart:<br>
-
+<img src="Task_Image.png" width="500">
 
 4. Write a program in JAVA to break and continue if the following cases occurs:<br>
 ● If user enters a negative number just break the loop and print “It’s Over”<br>
