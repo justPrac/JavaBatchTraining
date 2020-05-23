@@ -4,7 +4,8 @@
 ● If a number is divisible by 3 it should print “Consultadd” as a string<br>
 ● If a number is divisible by 5 it should print “JAVA Training” as a string<br>
 ● If a number is divisible by both 3 and 5 it should print “Consultadd JAVA Training” as a string.<br>
-2. Write a program in JAVA to perform the following operator based task:
+<br>
+2. Write a program in JAVA to perform the following operator based task:<br>
 ● Ask user to choose the following option first:<br>
 ○ If User Enter 1 - Addition<br>
 ○ If User Enter 2 - Subtraction<br>
