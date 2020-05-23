@@ -1,0 +1,9 @@
+ Change the menu items in such a way that user is keep on asked till press the 0 to exit
+ Listing of primitive data type
+ Implmenttion of singleton using the blocks
+ Add more shape implementation like circle, triangle and try to also explore the explicit casting for calling the specific methods of the child class
+ Override the equals method for the Rectangle class the overriden method should have implementation checking the length and bredth of the rectangle and if the lenth and bredth ar ssame return trues else false
+ Rectangle class should override the toString method in such a way that whenever we write 
+ sysout(r1) it prints the length and bredth of the rectangle objects
+ Please convert the logic of character counts to handle the small case as well. Print number of character each character count consider lower and small case as well.
+ 

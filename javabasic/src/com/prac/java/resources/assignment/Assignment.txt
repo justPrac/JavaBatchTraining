@@ -1,4 +1,0 @@
- Change the menu items in such a way that user is keep on asked till press the 0 to exit
- Listing of primitive data type
- Implmenttion of singleton using the blocks
- Add more shape implementation like circle, triangle and try to also explore the explicit casting for calling the specific methods of the child class
