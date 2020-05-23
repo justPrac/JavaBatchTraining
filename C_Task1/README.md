@@ -1,4 +1,4 @@
-# Task 1 Basic Exercise
+# Task 1: Basic Exercise
 <br>
 1. Swap two numbers using third variable as result name and do the same task without using any third variable.<br>
 2. Write a program to print the value given by the user.<br>
