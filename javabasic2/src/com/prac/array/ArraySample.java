@@ -21,10 +21,10 @@ public class ArraySample {
 	  for(int i = 0; i < ch.length; i++) 
 	  {
 		  int position = 0;
-		  if(ch[i] >= 65 && ch[i] <= 91)
+		  if(ch[i] >= 65 && ch[i] <= 90)
 			  position = ch[i]-65;
-		  else if(ch[i] >= 98 && ch[i] <= 124)
-			  position = ch[i]-98+26;
+		  else if(ch[i] >= 97 && ch[i] <= 122)
+			  position = ch[i]-97+26;
 		  else
 			  continue;
 		  
@@ -36,10 +36,10 @@ public class ArraySample {
 		  char temp = ' ';
 		  if(cnt[i]>0)
 		  {
-			  if(i <= 26)
+			  if(i < 26)
 				  temp = (char) (i + 65);
 			  else
-				  temp = (char) (i + 98-26);
+				  temp = (char) (i + 97-26);
 			  
 		     System.out.println( temp + " = " + cnt[i]);	 
 		  } 
