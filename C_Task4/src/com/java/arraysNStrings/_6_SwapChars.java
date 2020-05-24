@@ -5,10 +5,21 @@ public class _6_SwapChars
 
 	public static void main(String[] args)
 	{
-		System.out.println(changeCharCase('a'));
-		System.out.println(changeCharCase('Z'));
-		System.out.println(changeCharCase('A'));
-		System.out.println(changeCharCase('z'));
+		String s1 = "heLLo WOrLd";
+		System.out.println("Original String: " + s1);
+		System.out.println("Processed String: " + changeCase(s1));
+	}
+	
+	private static String changeCase(String str)
+	{
+		String newStr = "";
+		
+		for(int i = 0; i < str.length(); i++)
+		{
+			newStr += changeCharCase(str.charAt(i));
+		}
+		
+		return newStr;
 	}
 	
 	private static char changeCharCase(char c)
