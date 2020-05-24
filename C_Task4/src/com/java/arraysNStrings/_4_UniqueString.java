@@ -6,6 +6,10 @@ public class _4_UniqueString
 	{
 		String word = "heymaM";
 		System.out.println("Is the Word '" + word + "' unique?: " + uniqueChars(word));
+		
+		String str = "Be Happy and Stay Motivated";
+		System.out.println("Original String: " + str);
+		System.out.println("Processed String: " + lineReverse(str));
 	}
 	
 	private static boolean uniqueChars(String word)
@@ -29,4 +33,28 @@ public class _4_UniqueString
 		return true;
 	}
 
+	private static String lineReverse(String line)
+	{
+		String rev = "";
+		
+		for(String s : line.split(" "))
+		{
+			rev += wordReverse(s) + " ";
+		}
+		
+		if(rev.length() > 0) rev = rev.substring(0, rev.length()-1);
+		
+		return rev;
+	}
+	
+	private static String wordReverse(String word)
+	{
+		String rev = "";
+		for(int i = word.length()-1; i >= 0; i--)
+		{
+			rev += word.charAt(i);
+		}
+		return rev;
+	}
+	
 }
