@@ -21,7 +21,7 @@ For eg,<br>
 => “heLLo WOrLd” => “HEllO woRlD”.<br>
 
 7. Write a JAVA program that gives boolean values; true, if the string has balanced braces and false, if the string has unbalanced braces:<br>
-For eg, 
+For eg,<br>
 => “({{)}[}]()” //output => true //can’t use stack<br>
 => “{{([)]}}” //output => true<br>
 => “[})(” //output => false.<br>
