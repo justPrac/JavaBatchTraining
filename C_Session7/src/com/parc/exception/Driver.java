@@ -14,6 +14,10 @@ public class Driver
 		{
 			e.printStackTrace();
 		}
+		finally 
+		{
+			System.out.println("The finally block!");
+		}
 	}
 
 	public static boolean validation(String name) throws InvalidNameException
