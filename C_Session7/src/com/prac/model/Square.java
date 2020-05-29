@@ -17,4 +17,11 @@ public class Square extends Rectangle
 	{
 		return super.calcArea();
 	}
+	
+	@Override
+	public String toString()
+	{
+		String sq = "[Side: " + super.getLength() + "]";
+		return sq;
+	}
 }
