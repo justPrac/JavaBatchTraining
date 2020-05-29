@@ -7,18 +7,24 @@ public class Email
 	private String senderEmail;
 	private String receiverEmail;
 	
+	private static Email _instance;
+	private static int objCount;
 	
-	public Email(String senderEmail, String receiverEmail, String sub, String body)
+	public Email getIEmailInstance()
 	{
-		this.body = body;
-		this.receiverEmail = receiverEmail;
-		this.senderEmail = senderEmail;
-		this.subject = sub;
+		synchronized (_instance)
+		{
+			if(_instance == null)
+			_instance = new Email();
+		}
+		return _instance;
 	}
 	
-	public Email(String senderEmail, String receiverEmail, String body)
+	private Email()
 	{
-		this(senderEmail, receiverEmail, "", body);
+		objCount++;
+		//all fields are null by default
+		//use setters to set values
 	}
 	
 	public String getSubject()
@@ -59,6 +65,11 @@ public class Email
 	public void setReceiverEmail(String receiverEmail)
 	{
 		this.receiverEmail = receiverEmail;
+	}
+	
+   public static int getObjCount()
+	{
+		return objCount;
 	}
 	
 	@Override
