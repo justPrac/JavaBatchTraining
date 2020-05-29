@@ -46,4 +46,17 @@ public class Rectangle
 		String rec = "[Length: " + this.length + ", Breadth: " + this.breadth + "]";
 		return rec;
 	}
+
+	@Override
+	public boolean equals(Object obj)
+	{
+		if(this == obj) return true;
+		
+		if(obj instanceof Rectangle)
+		{
+			Rectangle r = (Rectangle)obj;
+			return (r.length == this.length && r.breadth == this.breadth);
+		}
+		return false;
+	}
 }
