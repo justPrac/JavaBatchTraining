@@ -3,6 +3,7 @@ package com.journaldev.spring.dao;
 import java.util.List;
 
 import com.journaldev.model.Employee;
+import com.journaldev.model.Rectangle;
 
 
 public interface EmployeeDAO {
@@ -15,4 +16,5 @@ public interface EmployeeDAO {
 	boolean updateEmployee(Employee employee);
 
 	boolean createEmployee(Employee employee);
+	
 }

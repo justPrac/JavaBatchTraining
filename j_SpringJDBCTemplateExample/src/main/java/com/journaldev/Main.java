@@ -12,7 +12,6 @@ import com.journaldev.spring.dao.EmployeeDAO;
 
 public class Main 
 {
-	
 	public static void main(String[] args) 
 	{
 		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
@@ -107,6 +106,7 @@ public class Main
 		{
 			Employee empToDelete = employeeDAO.getEmployeeById(id);
 			employeeDAO.deleteEmployee(empToDelete);
+			System.out.println("Employee Deleted Successfully!");
 		}
 		catch (EmptyResultDataAccessException e) 
 		{
