@@ -27,13 +27,11 @@ public class AppConfig {
 	@Bean
 	@Autowired
 	public JdbcTemplate getJdbcInst(DataSource dataSource){
-		System.out.println("------------");
 		return new JdbcTemplate(dataSource);
 	}
 	
 	@Bean
 	public DataSource dataSource() {
-	System.out.println("************");	
 		DriverManagerDataSource driverManagerDataSource = new DriverManagerDataSource();
 		driverManagerDataSource.setUrl(environment.getProperty(URL));
 		driverManagerDataSource.setUsername(environment.getProperty(USER));
