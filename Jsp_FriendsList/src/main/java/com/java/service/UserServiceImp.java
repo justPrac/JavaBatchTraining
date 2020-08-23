@@ -91,7 +91,7 @@ public class UserServiceImp implements UserService
 	{
 		if(username != null && password != null)
 		{
-			User user = userDao.getUser(username);
+			User user = userDao.getUser(username.toLowerCase());
 			return (user != null && user.getPassword().equals(password));
 		}
 		return false;
