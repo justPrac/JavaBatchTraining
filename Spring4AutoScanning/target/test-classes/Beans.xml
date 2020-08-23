@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd" >
+
+   <bean id = "empBean" class = "com.websystique.spring.model.Employee" init-method="initBean" lazy-init="true" scope="prototype" destroy-method="destroyBean">
+      <property name = "name" value = "Manish Negi"/>
+   </bean>
+   <!-- 
+    <bean id = "empBean1" class = "com.spring.prac.model.EmployeeBean" init-method="initBean_1">
+      <property name = "empName" value = "Manish Negi"/>
+   </bean> 
+   <bean class="com.spring.post.processor.InitEmpPostProcessor">
+   </bean>-->
+   <!-- 
+   <bean id="template" abstract="true">
+   	<property name="message1" value="Test"></property>
+   </bean>
+   <bean id="helloworld" class="com.spring.prac.model.HelloWorld" parent="">
+   	<property name="message1" value="DefaultTemp"></property>
+   </bean>
+   <bean id="helloIndia" class="com.spring.prac.model.HelloIndia" parent="helloworld">
+   	<property name="message2" value="child"></property>
+   </bean>
+   <bean id="person" class="com.spring.prac.model.Person">
+   </bean>  -->
+   
+	
+</beans>

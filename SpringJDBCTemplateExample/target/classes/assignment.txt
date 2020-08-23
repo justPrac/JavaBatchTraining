@@ -1,0 +1,2 @@
+Create a menu for the main.java operation
+Create your own mapper for the different class say Person related to your table
