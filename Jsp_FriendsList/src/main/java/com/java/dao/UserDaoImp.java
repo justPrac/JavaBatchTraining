@@ -47,11 +47,9 @@ public class UserDaoImp implements UserDao
 		
 		Session session = getSession();
 		session.beginTransaction();
-		user = (User) session.get(User.class, username);
+		user = (User) session.get(User.class, username.toLowerCase());
 		session.close();
-		
-		System.out.println(user);
-		
+				
 		return user;
 	}
 

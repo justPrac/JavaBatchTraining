@@ -4,6 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
@@ -15,7 +16,7 @@ public class User
 	private String name;
 	private String password;
 	private String email;
-	@OneToMany
+	@OneToMany(fetch = FetchType.EAGER)
 	private Set<User> friends; 
 	
 	public User()
